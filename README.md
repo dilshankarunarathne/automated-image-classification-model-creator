@@ -1,7 +1,7 @@
 # Automated Image Classification Model Creator and Trainer
 
 This Python package is used to create and train image classification models using Keras and Tensorflow. 
-
+It uses incremental learning to train the model. 
 
 [![Version](https://img.shields.io/badge/version-1.0-brightgreen.svg)](https://pypi.org/project/ad-topic-recommender/)
 [![License](https://img.shields.io/badge/license-CC%20BY--NC--SA%204.0-blue.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
