@@ -1,9 +1,9 @@
-import image-miner
+import image_miner
 
 query = input("Enter the search query: ")
 num_images = int(input("Enter the number of images: "))
 
-image-miner.downloader.download(
+image_miner.downloader.download(
     query,
     limit=num_images,
     output_dir='dataset',
