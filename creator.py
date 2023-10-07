@@ -8,7 +8,7 @@ from image_miner import downloader
 
 path_to_plants = "dataset"
 plant_classes = os.listdir(path_to_plants)
-train_dir = 'dataset/plants'
+train_dir = 'dataset/train'
 
 # Create data generators
 train_datagen = keras.preprocessing.image.ImageDataGenerator(
