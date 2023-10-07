@@ -68,7 +68,7 @@ if __name__ == '__main__':
     for (root, dirs, files) in os.walk('dataset', topdown=True):
         if root == 'train':
             continue
-
+        
 
     # create dataset
     for cls in classes:
