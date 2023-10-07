@@ -73,7 +73,7 @@ if __name__ == '__main__':
         for file in files:
             print("working on ", root, " directory dataset")
             source = root + "/" + file
-            destination
+            destination = 
 
 
     # create dataset
