@@ -71,6 +71,7 @@ if __name__ == '__main__':
             print("skipping ", root, " directory from train dataset move...")
             continue
         for file in files:
+            print
 
 
     # create dataset
