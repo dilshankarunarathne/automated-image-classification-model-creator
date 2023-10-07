@@ -53,7 +53,7 @@ def train():
     )
 
 
-def evaluate()""
+def evaluate():
 # calculate accuracy for training data
 train_loss, train_accuracy = model.evaluate(train_data_gen)
 
