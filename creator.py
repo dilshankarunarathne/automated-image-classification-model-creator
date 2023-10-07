@@ -62,3 +62,5 @@ class_labels = list(train_data_gen.class_indices.keys())
 print("Class Labels:")
 for label in class_labels:
     print(label)
+
+model.save("models/classifier_sequential.h5")
