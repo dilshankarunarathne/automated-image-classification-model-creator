@@ -78,4 +78,4 @@ if __name__ == '__main__':
         )
 
     epc = int(input("Enter the number of epochs: "))
-    
+    train(epc)
