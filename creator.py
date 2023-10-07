@@ -72,8 +72,8 @@ if __name__ == '__main__':
         for (root, dirs, files) in os.walk(folder, topdown=True):
             for file in files:
                 print("working on ", root, " directory dataset")
-                source = root + "/" + file
-                destination = './dataset/train/' + cl + file
+                src_path = root + "/" + file
+                dst_path = './dataset/train/' + cl + file
                 shutil.move(src_path, dst_path)
 
 
