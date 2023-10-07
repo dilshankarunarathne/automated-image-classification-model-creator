@@ -65,7 +65,7 @@ if __name__ == '__main__':
     num_images = int(input("Enter the number of images for a class in the dataset: "))
 
     # create train dataset
-    
+    print()
     for (root, dirs, files) in os.walk('dataset', topdown=True):
         if root == 'train' or root == 'dataset':
             print("skipping ", root, " directory from train dataset move...")
