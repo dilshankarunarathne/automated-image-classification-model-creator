@@ -67,7 +67,7 @@ if __name__ == '__main__':
     # create train dataset
     for (root, dirs, files) in os.walk('dataset', topdown=True):
         if root == 'train' or root == 'dataset':
-            print("skipping ", root, " directory from train dataset move")
+            print("skipping ", root, " directory from train dataset move...")
             continue
         for file in files:
 
