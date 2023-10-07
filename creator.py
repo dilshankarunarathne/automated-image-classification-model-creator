@@ -49,6 +49,7 @@ def train(epochs=15):
         train_data_gen,
         epochs=epochs
     )
+    model.save("models/classifier_sequential.h5")
 
 
 def evaluate():
