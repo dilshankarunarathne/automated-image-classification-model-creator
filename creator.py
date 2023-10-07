@@ -76,7 +76,6 @@ if __name__ == '__main__':
                 dst_path = './dataset/train/' + cl + file
                 shutil.move(src_path, dst_path)
 
-
     # create dataset
     for cls in classes:
         downloader.download(
