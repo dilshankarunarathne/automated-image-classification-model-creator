@@ -4,6 +4,8 @@ from tensorflow import keras
 from tensorflow.keras.layers import Conv2D, MaxPooling2D, Flatten, Dense
 from tensorflow.keras.models import Sequential
 
+from image_miner import downloader
+
 path_to_plants = "dataset"
 plant_classes = os.listdir(path_to_plants)
 train_dir = 'dataset/plants'
