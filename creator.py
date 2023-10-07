@@ -48,3 +48,9 @@ history = model.fit(
     train_data_gen,
     epochs=epochs
 )
+
+# calculate accracy for training data
+train_loss, train_accuracy = model.evaluate(train_data_gen)
+
+# Print the training accuracy
+print("Training Accuracy:", train_accuracy)
