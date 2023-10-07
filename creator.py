@@ -59,8 +59,6 @@ def evaluate():
     print("Training Accuracy:", train_accuracy)
 
 
-
-
 if __name__ == '__main__':
     classes = input("Enter the image classes (seperated by spaces) that you'd like to classify: ").split(" ")
     num_images = int(input("Enter the number of images for a class in the dataset: "))
