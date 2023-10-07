@@ -27,3 +27,17 @@ train_data_gen = train_datagen.flow_from_directory(
     class_mode='categorical',  # Use 'categorical for multi-class classification shuffle=True
     shuffle=True
 )
+
+model = Sequential([
+    Conv2D(32, (3, 3), activation='relu', input_shape=(150, 150, 3)),
+    MaxPooling2D(2, 2),
+    Conv2D(64, (3, 3), activation='relu'),
+    MaxPooling2D(2, 2),
+    Conv2D(128, (3, 3), activation='relu'),
+    MaxPooling2D(2, 2),
+    Flatten(),
+    Dense(512, activation='relu'),
+    Dense(4, activation='softmax')  # Update the number of classes to 4
+])
+
+model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
