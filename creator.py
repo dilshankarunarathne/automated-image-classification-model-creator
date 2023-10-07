@@ -52,6 +52,8 @@ def train():
         epochs=epochs
     )
 
+
+
 # calculate accuracy for training data
 train_loss, train_accuracy = model.evaluate(train_data_gen)
 
