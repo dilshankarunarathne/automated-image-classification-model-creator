@@ -65,7 +65,8 @@ if __name__ == '__main__':
     num_images = int(input("Enter the number of images for a class in the dataset: "))
 
     # create train dataset
-    for (root, dirs, files) in os.walk('.', topdown=True):
+    for (root, dirs, files) in os.walk('dataset', topdown=True):
+        
 
     # create dataset
     for cls in classes:
