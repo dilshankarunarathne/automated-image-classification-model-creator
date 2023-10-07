@@ -61,14 +61,6 @@ def evaluate():
     print("Training Accuracy:", train_accuracy)
 
 
-# Get the class labels and their corresponding indices
-class_labels = list(train_data_gen.class_indices.keys())
-
-# Print the class labels
-print("Class Labels:")
-for label in class_labels:
-    print(label)
-
 model.save("models/classifier_sequential.h5")
 
 if __name__ == '__main__':
