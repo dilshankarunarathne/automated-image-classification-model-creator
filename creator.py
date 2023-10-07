@@ -10,7 +10,6 @@ train_dir = 'dataset/plants'
 # Create data generators
 train_datagen = keras.preprocessing.image.ImageDataGenerator(
     rescale=1./255,
-# Normalize pixel values to [0, 1]
 )
 
 # Define batch size and image dimensions
