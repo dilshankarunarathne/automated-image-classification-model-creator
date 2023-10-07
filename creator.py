@@ -69,4 +69,12 @@ if __name__ == '__main__':
 
     # create dataset
     for cls in classes:
-        
+        downloader.download(
+            query,
+            limit=num_images,
+            output_dir='dataset',
+            adult_filter_off=False,
+            force_replace=False,
+            timeout=60,
+            verbose=True
+        )
