@@ -68,7 +68,7 @@ if __name__ == '__main__':
     print("train dataset seperation started")
     for cl in classes:
         dir = './dataset/' + cl
-        for (root, dirs, files) in os.walk('dataset', topdown=True):
+        for (root, dirs, files) in os.walk(dir, topdown=True):
             for file in files:
                 print("working on ", root, " directory dataset")
                 source = root + "/" + file
