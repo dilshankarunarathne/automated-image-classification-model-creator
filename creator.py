@@ -82,4 +82,4 @@ if __name__ == '__main__':
             verbose=True
         )
 
-    epc = int(input())
+    epc = int(input("Enter the number of epochs: "))
