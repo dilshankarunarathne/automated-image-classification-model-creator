@@ -22,7 +22,6 @@ train_data_gen = train_datagen.flow_from_directory(
     train_dir,
     target_size=(img_height, img_width),
     batch_size=batch_size,
-
     class_mode='categorical',  # Use 'categorical for multi-class classification shuffle=True
     shuffle=True
 )
