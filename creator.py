@@ -45,12 +45,12 @@ model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accur
 
 
 def train():
-epochs = 10  # You can adjust the number of epochs as needed
+    epochs = 10  # You can adjust the number of epochs as needed
 
-history = model.fit(
-    train_data_gen,
-    epochs=epochs
-)
+    history = model.fit(
+        train_data_gen,
+        epochs=epochs
+    )
 
 # calculate accuracy for training data
 train_loss, train_accuracy = model.evaluate(train_data_gen)
