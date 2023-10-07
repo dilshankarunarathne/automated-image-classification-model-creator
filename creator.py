@@ -81,3 +81,5 @@ if __name__ == '__main__':
             timeout=60,
             verbose=True
         )
+
+    epc = int(input)
