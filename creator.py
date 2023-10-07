@@ -5,7 +5,6 @@ from tensorflow.keras import layers
 
 path_to_plants = "dataset"
 plant_classes = os.listdir(path_to_plants)
-
 train_dir = 'dataset/plants'
 
 # Create data generators
