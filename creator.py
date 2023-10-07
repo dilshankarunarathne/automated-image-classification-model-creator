@@ -54,11 +54,11 @@ def train():
 
 
 def evaluate():
-# calculate accuracy for training data
-train_loss, train_accuracy = model.evaluate(train_data_gen)
+    # calculate accuracy for training data
+    train_loss, train_accuracy = model.evaluate(train_data_gen)
 
-# Print the training accuracy
-print("Training Accuracy:", train_accuracy)
+    # Print the training accuracy
+    print("Training Accuracy:", train_accuracy)
 
 # Get the class labels and their corresponding indices
 class_labels = list(train_data_gen.class_indices.keys())
