@@ -65,4 +65,4 @@ for label in class_labels:
 model.save("models/classifier_sequential.h5")
 
 if __name__ == '__main__':
-    classes = input()
+    classes = input("Enter the image classes that you'd like to classify: ")
