@@ -65,6 +65,7 @@ if __name__ == '__main__':
     num_images = int(input("Enter the number of images for a class in the dataset: "))
 
     # create train dataset
+    
 
     # create dataset
     for cls in classes:
