@@ -70,4 +70,3 @@ if __name__ == '__main__':
     # create dataset
     for cls in classes:
         
-
