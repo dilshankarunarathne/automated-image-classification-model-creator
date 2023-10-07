@@ -67,13 +67,10 @@ if __name__ == '__main__':
     # create train dataset
     print("train dataset seperation started")
     for (root, dirs, files) in os.walk('dataset', topdown=True):
-        if root == 'train' or root == 'dataset':
-            print("skipping ", root, " directory from train dataset move...")
-            continue
         for file in files:
             print("working on ", root, " directory dataset")
             source = root + "/" + file
-            destination = 
+            destination = ""
 
 
     # create dataset
