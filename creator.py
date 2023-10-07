@@ -41,3 +41,10 @@ model = Sequential([
 ])
 
 model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
+
+epochs = 10  # You can adjust the number of epochs as needed
+
+history = model.fit(
+    train_data_gen,
+    epochs=epochs
+)
