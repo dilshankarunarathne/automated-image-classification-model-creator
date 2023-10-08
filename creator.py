@@ -73,7 +73,7 @@ if __name__ == '__main__':
             for file in files:
                 print("working on ", root, " directory dataset")
                 src_path = root + "/" + file
-                dst_path = './dataset/train/' + cl + file
+                dst_path = './dataset/train/' + cl + "/" + file
                 shutil.move(src_path, dst_path)
 
     # create dataset
