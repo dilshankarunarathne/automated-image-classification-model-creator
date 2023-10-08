@@ -39,7 +39,7 @@ model = Sequential([
     MaxPooling2D(2, 2),
     Flatten(),
     Dense(512, activation='relu'),
-    Dense(4, activation='softmax')  # Update the number of classes to 4
+    Dense(n_classes, activation='softmax')  # Update the number of classes to 4
 ])
 
 model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
