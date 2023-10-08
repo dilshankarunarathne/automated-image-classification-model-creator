@@ -66,7 +66,7 @@ if __name__ == '__main__':
     num_images = int(input("Enter the number of images for a class in the dataset: "))
 
     # create train dataset
-    print("train dataset seperation started")
+    print("train dataset separation started")
     for cl in classes:
         folder = './dataset/' + cl
         for (root, dirs, files) in os.walk(folder, topdown=True):
