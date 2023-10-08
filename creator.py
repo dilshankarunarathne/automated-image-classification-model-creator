@@ -45,11 +45,12 @@ def train(epochs=15):
     ])
 
     model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
-    
+
     history = model.fit(
         train_data_gen,
         epochs=epochs
     )
+    
     model.save("models/classifier_sequential.h5")
 
 
