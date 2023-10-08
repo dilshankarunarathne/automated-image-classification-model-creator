@@ -7,7 +7,7 @@ from tensorflow.keras.models import Sequential
 
 from image_miner import downloader
 
-
+model = None
 
 path_to_plants = "dataset"
 plant_classes = os.listdir(path_to_plants)
