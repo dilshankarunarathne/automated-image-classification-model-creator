@@ -31,8 +31,6 @@ train_data_gen = train_datagen.flow_from_directory(
 )
 
 
-
-
 def train(epochs=15):
     model = Sequential([
         Conv2D(32, (3, 3), activation='relu', input_shape=(150, 150, 3)),
