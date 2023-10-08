@@ -65,17 +65,6 @@ if __name__ == '__main__':
     classes = input("Enter the image classes (seperated by spaces) that you'd like to classify: ").split(" ")
     num_images = int(input("Enter the number of images for a class in the dataset: "))
 
-    # create train dataset
-    print("train dataset separation started")
-    for cl in classes:
-        folder = './dataset/' + cl
-        for (root, dirs, files) in os.walk(folder, topdown=True):
-            for file in files:
-                print("working on ", root, " directory dataset")
-                src_path = root + "/" + file
-                dst_path = './dataset/train/' + cl + "/" + file
-                shutil.move(src_path, dst_path)
-
     # create dataset
     for cls in classes:
         downloader.download(
@@ -87,6 +76,17 @@ if __name__ == '__main__':
             timeout=60,
             verbose=True
         )
+
+    # create train dataset
+    print("train dataset separation started")
+    for cl in classes:
+        folder = './dataset/' + cl
+        for (root, dirs, files) in os.walk(folder, topdown=True):
+            for file in files:
+                print("working on ", root, " directory dataset")
+                src_path = root + "/" + file
+                dst_path = './dataset/train/' + cl + "/" + file
+                shutil.move(src_path, dst_path)
 
     epc = int(input("Enter the number of epochs: "))
     train(epc)
