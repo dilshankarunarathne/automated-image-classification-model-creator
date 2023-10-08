@@ -77,6 +77,8 @@ if __name__ == '__main__':
             verbose=True
         )
 
+    n_classes = len(classes)
+
     # create train dataset
     print("train dataset separation started")
     for cl in classes:
