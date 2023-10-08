@@ -7,6 +7,8 @@ from tensorflow.keras.models import Sequential
 
 from image_miner import downloader
 
+
+
 path_to_plants = "dataset"
 plant_classes = os.listdir(path_to_plants)
 train_dir = 'dataset/train'
@@ -50,7 +52,7 @@ def train(epochs=15):
         train_data_gen,
         epochs=epochs
     )
-    
+
     model.save("models/classifier_sequential.h5")
 
 
