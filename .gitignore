@@ -63,3 +63,6 @@ target/
 /gz/
 *.jpg
 *.h5
+*.gif
+*.png
+*.jpeg
